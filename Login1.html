@@ -1,0 +1,33 @@
+<html> 
+<head> 
+<script> 
+function validate(){
+var username = document.getElementById("username").value;
+var password = document.getElementById("password").value;
+if ( username == "vaishnavi" && password == "vaishnaviepam"){
+window.location = "correct.html"; 
+return false;
+}
+else{
+window.location = "wrong.html"
+
+}
+}
+</script> 
+<body>
+<div class="container">
+<div class="main">
+<h2> Login Form Validation</h2>
+<form id="form_id" method="post" name="myform">
+<label>UserName :</label>
+<input type="text" name="username" id="username"/><br>
+<label>Password :</label>
+<input type="password" name="password" id="password"/><br>
+<input type="button" value="Login" id="submit" onclick="validate()"/>
+</form>
+<span>Correct Details are: <br/><b class="valid">User Name : vaishnavi<br/>Password : vaishnaviepam</b></span>
+</div>
+</div>
+</body>
+</head>
+</html>
